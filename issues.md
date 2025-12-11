@@ -34,7 +34,7 @@ The multisig frontend follows this workflow:
 
 ### Core Components
 
-- [ ] **Issue #22**: Create Navbar component
+- [x] **Issue #22**: Create Navbar component
   - Wallet connection button
   - Disconnect functionality
   - Network indicator
