@@ -5,7 +5,7 @@ import { useStacksWallet } from "@/hooks/useStacksWallet";
 
 type WalletState = ReturnType<typeof useStacksWallet>;
 
-const formatAddress = (address: string | null) => {
+const formatAddress = (address: string | null | undefined) => {
   if (!address) return "Connect Wallet";
   if (address.length <= 10) return address;
   return `${address.slice(0, 6)}…${address.slice(-4)}`;
