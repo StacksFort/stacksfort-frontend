@@ -54,17 +54,23 @@ The multisig frontend follows this workflow:
   - ✅ Helper functions to check if user is a signer
   - ✅ Helper functions to get transaction status
 
-- [ ] **Issue #25**: Create MultisigDashboard component
-  - Display multisig address
-  - Show signers list
-  - Display threshold information
-  - Show multisig balance (STX and tokens)
+- [x] **Issue #25**: Create MultisigDashboard component
+  - ✅ Display multisig address with copy functionality
+  - ✅ Show signers list with status indicators
+  - ✅ Display threshold information with visual indicators
+  - ✅ Show multisig balance (STX)
+  - ✅ Loading states with skeleton loaders
+  - ✅ Error handling and empty states
+  - ✅ Premium dark theme styling
 
-- [ ] **Issue #26**: Create TransactionList component
-  - Fetch and display transactions
-  - Filter by status (pending/executed)
-  - Pagination
-  - Loading states
+- [x] **Issue #26**: Create TransactionList component
+  - ✅ Fetch and display transactions using useMultisig hook
+  - ✅ Filter by status (all/pending/executed)
+  - ✅ Pagination with 10 items per page
+  - ✅ Loading states with skeleton loaders
+  - ✅ Empty state handling
+  - ✅ Transaction type badges (STX/Token)
+  - ✅ Premium dark theme styling with hover effects
 
 - [ ] **Issue #27**: Create TransactionDetail component
   - Display transaction information (ID, type, amount, recipient, token)

@@ -50,6 +50,7 @@ export function useMultisig(contractAddress?: string, contractName?: string) {
   const wallet = useStacksWallet();
   const [multisigState, setMultisigState] = useState<MultisigState | null>(null);
   const [transactions, setTransactions] = useState<Transaction[]>([]);
+  const [balance, setBalance] = useState<bigint>(BigInt(0));
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -456,9 +457,10 @@ export function useMultisig(contractAddress?: string, contractName?: string) {
 
   return {
     // State
-    multisigState,
+    state: multisigState,
     transactions,
-    loading,
+    balance,
+    isLoading: loading,
     error,
 
     // Read-only functions
